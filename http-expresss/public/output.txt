@@ -1,0 +1,50 @@
+/
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Sun, 26 Oct 2014 19:43:53 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+/about
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Sun, 26 Oct 2014 19:44:21 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+/ABOUT
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Sun, 26 Oct 2014 19:44:40 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+/about/
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Sun, 26 Oct 2014 19:45:01 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+/me
+HTTP/1.1 301 Moved Permanently
+Content-Type: text/html
+location: /about
+Date: Sun, 26 Oct 2014 19:45:21 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+/css/base.css
+HTTP/1.1 200 OK
+Content-Type: text/css
+Date: Sun, 26 Oct 2014 19:45:44 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+/img/image1.png
+HTTP/1.1 200 OK
+Content-Type: image/png
+Date: Sun, 26 Oct 2014 20:10:41 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
