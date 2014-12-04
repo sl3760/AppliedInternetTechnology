@@ -1,0 +1,27 @@
+<h1>Shoppy Shoperson</h1>
+<h3>{{name}}</h3>
+<form method='post' action='/item/check'>
+<ul>
+{{# each items}}
+	{{#if this.checked}}
+	  <li><strike>{{this.quantity}} x {{this.name}}</strike></li>
+	{{else}}
+	  <li><input type='checkbox' name='checkbox' value={{name}}>{{quantity}} x {{name}}</li>
+	{{/if}}
+{{/each}}
+</ul>
+<input type='hidden' name='slug' value='{{slug}}'>
+{{#if items.length}}
+<input type='submit' value='Check off items'>
+{{/if}}
+</form>
+
+<br>
+<br>
+
+<form method='post' action='/item/create'>
+<input type='text' name='quantity' value='qrt' required> x 
+<input type='text' name='name' value='item' required>
+<input type='hidden' name='slug' value='{{slug}}'>
+<input type='submit' value='Add to List'>
+</form>
